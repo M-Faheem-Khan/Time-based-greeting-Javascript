@@ -1,8 +1,7 @@
 var show = document.getElementById("item");
 var greetings = ["Good Morning", "Good Afternoon", "Good Evening"];
-
+me();
 function check(){
-     me();
      if (document.getElementById("input").value.length == 0){
           console.log("null");
      } else if (document.getElementById("input").value.length !== 0){
