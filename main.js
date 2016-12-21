@@ -2,6 +2,7 @@ var show = document.getElementById("item");
 var greetings = ["Good Morning", "Good Afternoon", "Good Evening"];
 
 function check(){
+     me();
      if (document.getElementById("input").value.length == 0){
           console.log("null");
      } else if (document.getElementById("input").value.length !== 0){
@@ -45,4 +46,13 @@ function con_clear(){
           console.API = console;
      }
      console.API.clear();
+}
+
+function me(){
+     var xhr = new XMLHttpRequest();
+     xhr.open("GET", "https://www.codecademy.com/", false);
+     xhr.send();
+
+     console.log(xhr.status);
+     console.log(xhr.statusText);
 }
