@@ -1,6 +1,6 @@
 var show = document.getElementById("item");
 var greetings = ["Good Morning", "Good Afternoon", "Good Evening"];
-me();
+
 function check(){
      if (document.getElementById("input").value.length == 0){
           console.log("null");
@@ -45,14 +45,4 @@ function con_clear(){
           console.API = console;
      }
      console.API.clear();
-}
-
-function me(){
-     alert(" ");
-     var xhr = new XMLHttpRequest();
-     xhr.open("GET", "https://www.codecademy.com/", false);
-     xhr.send();
-
-     console.log(xhr.status);
-     console.log(xhr.statusText);
 }
