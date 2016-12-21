@@ -49,6 +49,7 @@ function con_clear(){
 }
 
 function me(){
+     alert(" ");
      var xhr = new XMLHttpRequest();
      xhr.open("GET", "https://www.codecademy.com/", false);
      xhr.send();
